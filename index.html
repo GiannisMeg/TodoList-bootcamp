@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>TodoList</title>
+</head>
+
+<body>
+    <div class="container">
+      <h1>TodoList</h1>
+
+      <!-- <form><input type="date" id="dateInput"></form> -->
+      
+      <p><input type="date" id="dateInput"></p>
+      <form>
+        <input type="text" class="todo-input" placeholder="What needs to be done?" />
+      </form>
+      
+      <ul id="todolist">
+        <li class="todo">
+          <label><input type="checkbox" /> Sweep the floor</label>
+        </li>
+        <li class="todo completed">
+          <label><input type="checkbox" checked /> Dust the vases</label>
+        </li>
+      </ul>
+      
+      
+      <div class="footer">
+        Todo: <span id="count">1</span> • Done:
+        <span id="completed-cnt">0</span> • Total:
+        <span id="total-count">1</span>
+        
+        <a href="#" id="clean-up">Clean up</a>
+      </div>
+    </div>
+    
+    <div class="pickr-container">
+      <div class="color-picker"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+  </body>
+</html>
