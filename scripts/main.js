@@ -82,20 +82,15 @@ function updateCounters() {
       updateCounters();
     });
 
-    // locale storage
-
-// an uparxoun saved items sto localStorage
+// locale storage
+// checking for existing todos in localStorage
 let todos = JSON.parse(localStorage.getItem("todos") || "[]");
 
 
     
     function cleanUpTodos() {
       // get all the "done" items
-
-      //erwtisi gia to .completed
       const doneItems = document.querySelectorAll(".completed");
-    
-      // loop through the "done" todo items
       for (let i = 0; i < doneItems.length; i++) {
         doneItems[i].remove();
       }
